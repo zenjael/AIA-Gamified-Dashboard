@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIA Agent Training Dashboard - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>AIA Agent Training Dashboard</h1>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+            </ul>
+        </nav>
+        <div class="user-stats">
+            <span>Points: 1,250</span>
+            <span>Tokens: 85</span>
+            <span>Overall Rating: 4.2/5</span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <h2>Welcome back, Sarah! 👋</h2>
+            <div class="dashboard-overview">
+                <div class="overview-card">
+                    <h3>🎯 Today's Goal</h3>
+                    <p>Complete 1 challenge to maintain your streak</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%"></div>
+                    </div>
+                    <small>0/1 challenges completed today</small>
+                </div>
+                <div class="overview-card">
+                    <h3>🔥 Current Streak</h3>
+                    <p class="streak-number">7 days</p>
+                    <small>Keep it going!</small>
+                </div>
+                <div class="overview-card">
+                    <h3>📈 This Week</h3>
+                    <p>+180 points earned</p>
+                    <p>+18 tokens earned</p>
+                    <small>Great progress!</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Limited Time Side Quest -->
+        <section id="side-quest" class="featured-section">
+            <h2>🌟 Limited Time Side Quest</h2>
+            <div class="current-quest">
+                <div class="quest-card">
+                    <div class="quest-urgency">⏰ ENDING SOON</div>
+                    <h4>New Year Policy Update Quiz</h4>
+                    <p>Test your knowledge on the latest policy changes for 2024</p>
+                    <div class="quest-details">
+                        <span class="quest-type">📝 Multiple Choice Quiz</span>
+                        <span class="quest-reward">🪙 Reward: 30 tokens</span>
+                        <span class="quest-time">⏳ Time Remaining: 5 days, 12 hours</span>
+                    </div>
+                    <button class="cta-button">Start Quest Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommended Challenges -->
+        <section class="recommendations">
+            <h2>🎯 Recommended for You</h2>
+            <div class="recommendation-grid">
+                <div class="challenge-card recommended">
+                    <div class="recommendation-badge">RECOMMENDED</div>
+                    <h4>Challenge 3: Pre-Retirement Planning</h4>
+                    <p>Discuss retirement planning with a 50-year-old professional</p>
+                    <div class="challenge-meta">
+                        <span class="difficulty">📊 Intermediate</span>
+                        <span class="duration">⏱️ 15-20 min</span>
+                        <span class="reward">🪙 25 tokens</span>
+                    </div>
+                    <p class="status-unlocked">Status: Ready to Start ✨</p>
+                    <button class="start-button">Start Challenge</button>
+                </div>
+
+                <div class="challenge-card">
+                    <h4>Review: Growing Family Challenge</h4>
+                    <p>Your last attempt scored 3.8/5. Retry for a better rating!</p>
+                    <div class="challenge-meta">
+                        <span class="difficulty">📊 Beginner</span>
+                        <span class="last-score">⭐ Last: 3.8/5</span>
+                        <span class="reward">🪙 +5 bonus tokens</span>
+                    </div>
+                    <p class="status-retry">Status: Available for Retry 🔄</p>
+                    <button class="retry-button">Retry Challenge</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Continue Learning -->
+        <section class="continue-learning">
+            <h2>📚 Continue Your Learning Journey</h2>
+            <div class="learning-path">
+                <div class="path-step completed">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>First Time Home Buyer ✅</h4>
+                        <p>Rating: ⭐ 4.5/5</p>
+                    </div>
+                </div>
+                <div class="path-connector"></div>
+                <div class="path-step completed">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Growing Family ✅</h4>
+                        <p>Rating: ⭐ 3.8/5</p>
+                    </div>
+                </div>
+                <div class="path-connector"></div>
+                <div class="path-step current">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Pre-Retirement Planning 🎯</h4>
+                        <p>Next challenge</p>
+                    </div>
+                </div>
+                <div class="path-connector locked"></div>
+                <div class="path-step locked">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Business Owner Protection 🔒</h4>
+                        <p>Unlock with 4+ rating</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Stats -->
+        <section class="quick-stats">
+            <h2>📊 Quick Stats</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-info">
+                        <h4>Challenges Completed</h4>
+                        <p class="stat-number">2</p>
+                        <small>out of 6 total</small>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-info">
+                        <h4>Average Rating</h4>
+                        <p class="stat-number">4.2</p>
+                        <small>Keep improving!</small>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-info">
+                        <h4>Success Rate</h4>
+                        <p class="stat-number">100%</p>
+                        <small>All challenges passed</small>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📈</div>
+                    <div class="stat-info">
+                        <h4>Progress</h4>
+                        <p class="stat-number">33%</p>
+                        <small>Level 3 Agent</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Activity -->
+        <section class="recent-activity">
+            <h2>🕒 Recent Activity</h2>
+            <div class="activity-list">
+                <div class="activity-item">
+                    <div class="activity-icon">✅</div>
+                    <div class="activity-content">
+                        <h4>Completed "Growing Family" Challenge</h4>
+                        <p>Earned 120 points and 12 tokens</p>
+                        <small>2 days ago</small>
+                    </div>
+                    <div class="activity-rating">⭐ 3.8/5</div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">🛒</div>
+                    <div class="activity-content">
+                        <h4>Purchased AIA Coffee Mug</h4>
+                        <p>Spent 15 tokens</p>
+                        <small>3 days ago</small>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">✅</div>
+                    <div class="activity-content">
+                        <h4>Completed "First Time Home Buyer" Challenge</h4>
+                        <p>Earned 150 points and 15 tokens</p>
+                        <small>1 week ago</small>
+                    </div>
+                    <div class="activity-rating">⭐ 4.5/5</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AIA Group. All rights reserved.</p>
+        <p>Agent Training Dashboard v1.0</p>
+    </footer>
+</body>
+</html>
