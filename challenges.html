@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIA Agent Training Dashboard - Challenges</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>AIA Agent Training Dashboard</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="challenges.html" class="active">Challenges</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+            </ul>
+        </nav>
+        <div class="user-stats">
+            <span>Points: 1,250</span>
+            <span>Tokens: 85</span>
+            <span>Overall Rating: 4.2/5</span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Challenges Overview -->
+        <section class="challenges-header">
+            <h2>🎯 Training Challenges</h2>
+            <div class="challenges-summary">
+                <div class="summary-stat">
+                    <h3>2/6</h3>
+                    <p>Completed</p>
+                </div>
+                <div class="summary-stat">
+                    <h3>1</h3>
+                    <p>Available</p>
+                </div>
+                <div class="summary-stat">
+                    <h3>3</h3>
+                    <p>Locked</p>
+                </div>
+                <div class="summary-stat">
+                    <h3>4.2/5</h3>
+                    <p>Avg Rating</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter and Sort -->
+        <section class="challenges-controls">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Challenges</button>
+                <button class="filter-btn" data-filter="available">Available</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+                <button class="filter-btn" data-filter="locked">Locked</button>
+            </div>
+            <div class="sort-controls">
+                <select class="sort-select">
+                    <option value="level">Sort by Level</option>
+                    <option value="difficulty">Sort by Difficulty</option>
+                    <option value="rating">Sort by Rating</option>
+                    <option value="date">Sort by Date</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Beginner Level Challenges -->
+        <section class="challenge-level">
+            <h3>🌱 Beginner Level</h3>
+            <div class="challenges-grid">
+                <div class="challenge-card completed" data-status="completed">
+                    <div class="challenge-status-badge completed">COMPLETED</div>
+                    <div class="challenge-header">
+                        <h4>Challenge 1: First Time Home Buyer</h4>
+                        <div class="challenge-rating">⭐ 4.5/5</div>
+                    </div>
+                    <p>Practice selling life insurance to a young couple buying their first home</p>
+                    <div class="challenge-details">
+                        <div class="challenge-meta">
+                            <span class="difficulty">📊 Beginner</span>
+                            <span class="duration">⏱️ 15 min</span>
+                            <span class="reward">🪙 15 tokens</span>
+                        </div>
+                        <div class="challenge-skills">
+                            <span class="skill-tag">Basic Sales</span>
+                            <span class="skill-tag">Life Insurance</span>
+                            <span class="skill-tag">Young Adults</span>
+                        </div>
+                    </div>
+                    <div class="challenge-actions">
+                        <button class="review-button">Review Performance</button>
+                        <button class="retry-button">Retry for Better Score</button>
+                    </div>
+                </div>
+
+                <div class="challenge-card completed" data-status="completed">
+                    <div class="challenge-status-badge completed">COMPLETED</div>
+                    <div class="challenge-header">
+                        <h4>Challenge 2: Growing Family</h4>
+                        <div class="challenge-rating">⭐ 3.8/5</div>
+                    </div>
+                    <p>Handle objections from parents concerned about premiums</p>
+                    <div class="challenge-details">
+                        <div class="challenge-meta">
+                            <span class="difficulty">📊 Beginner</span>
+                            <span class="duration">⏱️ 20 min</span>
+                            <span class="reward">🪙 12 tokens</span>
+                        </div>
+                        <div class="challenge-skills">
+                            <span class="skill-tag">Objection Handling</span>
+                            <span class="skill-tag">Family Planning</span>
+                            <span class="skill-tag">Budget Concerns</span>
+                        </div>
+                    </div>
+                    <div class="challenge-actions">
+                        <button class="review-button">Review Performance</button>
+                        <button class="retry-button recommended">Retry Recommended</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intermediate Level Challenges -->
+        <section class="challenge-level">
+            <h3>🚀 Intermediate Level</h3>
+            <div class="challenges-grid">
+                <div class="challenge-card available recommended" data-status="available">
+                    <div class="challenge-status-badge available">AVAILABLE</div>
+                    <div class="recommendation-badge">RECOMMENDED</div>
+                    <div class="challenge-header">
+                        <h4>Challenge 3: Pre-Retirement Planning</h4>
+                        <div class="challenge-rating">Not attempted</div>
+                    </div>
+                    <p>Discuss retirement planning with a 50-year-old professional</p>
+                    <div class="challenge-details">
+                        <div class="challenge-meta">
+                            <span class="difficulty">📊 Intermediate</span>
+                            <span class="duration">⏱️ 25 min</span>
+                            <span class="reward">🪙 25 tokens</span>
+                        </div>
+                        <div class="challenge-skills">
+                            <span class="skill-tag">Retirement Planning</span>
+                            <span class="skill-tag">Investment Products</span>
+                            <span class="skill-tag">Professional Clients</span>
+                        </div>
+                        <div class="unlock-requirement">
+                            <span class="unlock-text">✅ Unlocked by completing previous challenges</span>
+                        </div>
+                    </div>
+                    <div class="challenge-actions">
+                        <button class="start-button">Start Challenge</button>
+                        <button class="preview-button">Preview Scenario</button>
+                    </div>
+                </div>
+
+                <div class="challenge-card locked" data-status="locked">
+                    <div class="challenge-status-badge locked">LOCKED</div>
+                    <div class="challenge-header">
+                        <h4>Challenge 4: Business Owner Protection</h4>
+                        <div class="challenge-rating">🔒</div>
+                    </div>
+                    <p>Sell key person insurance to a small business owner</p>
+                    <div class="challenge-details">
+                        <div class="challenge-meta">
+                            <span class="difficulty">📊 Intermediate</span>
+                            <span class="duration">⏱️ 30 min</span>
+                            <span class="reward">🪙 30 tokens</span>
+                        </div>
+                        <div class="challenge-skills">
+                            <span class="skill-tag">Business Insurance</span>
+                            <span class="skill-tag">Risk Assessment</span>
+                            <span class="skill-tag">B2B Sales</span>
+                        </div>
+                        <div class="unlock-requirement">
+                            <span class="unlock-text">🔒 Complete Challenge 3 with 4+ rating</span>
+                        </div>
+                    </div>
+                    <div class="challenge-actions">
+                        <button class="locked-button" disabled>Locked</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Level Challenges -->
+        <section class="challenge-level">
+            <h3>🏆 Advanced Level</h3>
+            <div class="challenges-grid">
+                <div class="challenge-card locked" data-status="locked">
+                    <div class="challenge-status-badge locked">LOCKED</div>
+                    <div class="challenge-header">
+                        <h4>Challenge 5: High Net Worth Client</h4>
+                        <div class="challenge-rating">🔒</div>
+                    </div>
+                    <p>Navigate complex estate planning needs for wealthy individuals</p>
+                    <div class="challenge-details">
+                        <div class="challenge-meta">
+                            <span class="difficulty">📊 Advanced</span>
+                            <span class="duration">⏱️ 45 min</span>
+                            <span class="reward">🪙 50 tokens</span>
+                        </div>
+                        <div class="challenge-skills">
+                            <span class="skill-tag">Estate Planning</span>
+                            <span class="skill-tag">High Net Worth</span>
+                            <span class="skill-tag">Complex Products</span>
+                        </div>
+                        <div class="unlock-requirement">
+                            <span class="unlock-text">🔒 Complete all Intermediate challenges</span>
+                        </div>
+                    </div>
+                    <div class="challenge-actions">
+                        <button class="locked-button" disabled>Locked</button>
+                    </div>
+                </div>
+
+                <div class="challenge-card locked" data-status="locked">
+                    <div class="challenge-status-badge locked">LOCKED</div>
+                    <div class="challenge-header">
+                        <h4>Challenge 6: Crisis Management</h4>
+                        <div class="challenge-rating">🔒</div>
+                    </div>
+                    <p>Handle a claim dispute with an upset customer professionally</p>
+                    <div class="challenge-details">
+                        <div class="challenge-meta">
+                            <span class="difficulty">📊 Advanced</span>
+                            <span class="duration">⏱️ 35 min</span>
+                            <span class="reward">🪙 40 tokens</span>
+                        </div>
+                        <div class="challenge-skills">
+                            <span class="skill-tag">Crisis Management</span>
+                            <span class="skill-tag">Customer Service</span>
+                            <span class="skill-tag">Conflict Resolution</span>
+                        </div>
+                        <div class="unlock-requirement">
+                            <span class="unlock-text">🔒 Complete all Intermediate challenges</span>
+                        </div>
+                    </div>
+                    <div class="challenge-actions">
+                        <button class="locked-button" disabled>Locked</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AIA Group. All rights reserved.</p>
+        <p>Agent Training Dashboard v1.0</p>
+    </footer>
+</body>
+</html>
